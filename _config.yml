@@ -1,5 +1,5 @@
-title: My Local Preview Site
-description: A Jekyll site for local VS Code testing.
+title: My Website
+baseurl: "/malcolmwigder.com"
 
 
 collections:

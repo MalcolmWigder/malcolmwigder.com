@@ -16,8 +16,8 @@ I am interested in algorithmic trading and simulation theory, so you may find so
 
 I also am interested in Buddhist and Anarchist thought, so you might find some writings about that.
 
-So here is where I will share these things. The output of my mind shot into the void. My goal is to post a project or puzzle every 2 weeks, and 3 writings a week.
 
+<br>
 <br>
 
 
