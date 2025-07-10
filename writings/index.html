@@ -1,0 +1,59 @@
+---
+layout: default
+title: Writings
+permalink: /writings/
+---
+
+<style>
+.card {
+  display: flex;
+  align-items: center;
+  background-color: #f1f5f9;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 24px;
+  text-decoration: none;
+  color: inherit;
+  transition: background 0.2s ease;
+}
+.card:hover {
+  background-color: #e2e8f0;
+}
+.card-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-left: auto;
+}
+.card-content {
+  flex-grow: 1;
+}
+.card-title {
+  font-size: 1.25em;
+  font-weight: bold;
+  margin: 0;
+}
+.card-summary {
+  margin-top: 4px;
+  color: #555;
+}
+.card-date {
+  font-size: 0.85em;
+  margin-top: 8px;
+  color: #888;
+}
+</style>
+
+{% for post in site.writings reversed %}
+<a class="card" href="{{ post.url }}">
+  <div class="card-content">
+    <p class="card-title">{{ post.title }}</p>
+    <p class="card-summary">{{ post.summary | default: "..." }}</p>
+    <p class="card-date">{{ post.date | date: "%b %d, %Y" }}</p>
+  </div>
+  {% if post.image %}
+    <img class="card-img" src="{{ post.image }}" alt="Thumbnail">
+  {% endif %}
+</a>
+{% endfor %}

@@ -1,0 +1,8 @@
+title: My Local Preview Site
+description: A Jekyll site for local VS Code testing.
+theme: minima
+
+collections:
+  writings:
+    output: true
+    permalink: /writings/:name/
