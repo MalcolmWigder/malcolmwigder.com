@@ -5,9 +5,9 @@
     </a>
     
   <nav style="background: #fff; padding: 12px 24px; border-bottom: 1px solid #ccc;">
-  <a href="/" class="nav-link {% if page.url == '/' %}active{% endif %}">Home</a>
-  <a href="{{ site.baseurl }}/writings/">Writings</a>
-  <a href="{{ site.baseurl }}/projects/">Projects</a>
-  <a href="{{ site.baseurl }}/puzzles/">Puzzles</a>
+  <a href="{{ site.baseurl }}/" class="nav-link {% if page.url == '/' %}active{% endif %}">Home</a>
+    <a href="{{ site.baseurl }}/writings/" class="nav-link {% if page.url contains '/writings/' %}active{% endif %}">Writings</a>
+    <a href="{{ site.baseurl }}/projects/" class="nav-link {% if page.url contains '/projects/' %}active{% endif %}">Projects</a>
+    <a href="{{ site.baseurl }}/puzzles/" class="nav-link {% if page.url contains '/puzzles/' %}active{% endif %}">Puzzles</a>
 </nav>
 </header>
