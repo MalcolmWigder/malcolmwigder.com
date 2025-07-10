@@ -3,11 +3,11 @@
     <a href="{{ '/' | relative_url }}">
       <img src="{{ '/assets/logo.png' | relative_url }}" alt="Logo" style="height:64px;">
     </a>
-  </div>
-  <nav style="background: #fff; padding: 12px 0;">
-    <a href="{{ site.baseurl }}/" class="nav-link {% if page.url == '/' %}active{% endif %}">Home</a>
-    <a href="{{ site.baseurl }}/writings/" class="nav-link {% if page.url contains '/writings/' %}active{% endif %}">Writings</a>
-    <a href="{{ site.baseurl }}/projects/" class="nav-link {% if page.url contains '/projects/' %}active{% endif %}">Projects</a>
-    <a href="{{ site.baseurl }}/puzzles/" class="nav-link {% if page.url contains '/puzzles/' %}active{% endif %}">Puzzles</a>
-  </nav>
+    
+  <nav style="background: #fff; padding: 12px 24px; border-bottom: 1px solid #ccc;">
+  <a href="/" class="nav-link {% if page.url == '/' %}active{% endif %}">Home</a>
+ <a href="/writings/" class="nav-link {% if page.url contains '/writings/' or page.collection == 'writings' %}active{% endif %}">Writings</a>
+  <a href="/projects/" class="nav-link {% if page.url contains '/projects/' %}active{% endif %}">Projects</a>
+  <a href="/puzzles/" class="nav-link {% if page.url contains '/puzzles/' %}active{% endif %}">Puzzles</a>
+</nav>
 </header>
