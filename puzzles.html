@@ -1,0 +1,64 @@
+---
+layout: default
+title: Puzzles
+permalink: /puzzles/
+---
+
+<style>
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fefefe;
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 32px;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+.card-img {
+  width: 100%;
+  max-height: 240px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+.card-content {
+  flex-grow: 1;
+}
+.card-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0 0 8px 0;
+}
+.card-summary {
+  font-size: 1.05em;
+  margin-bottom: 12px;
+  color: #444;
+}
+.card-date {
+  font-size: 0.9em;
+  color: #888;
+}
+</style>
+
+<h1 style="margin-bottom: 32px;">Puzzles</h1>
+
+{% for puzzle in site.puzzles reversed %}
+<a class="card" href="{{ puzzle.url }}">
+  {% if puzzle.image %}
+    <img class="card-img" src="{{ puzzle.image }}" alt="Thumbnail">
+  {% endif %}
+  <div class="card-content">
+    <p class="card-title">{{ puzzle.title }}</p>
+    <p class="card-summary">{{ puzzle.summary | default: "..." }}</p>
+    <p class="card-date">{{ puzzle.date | date: "%b %d, %Y" }}</p>
+  </div>
+</a>
+{% endfor %}
