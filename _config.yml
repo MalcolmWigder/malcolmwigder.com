@@ -6,12 +6,9 @@ collections:
   writings:
     output: true
     permalink: /writings/:name/
-
-collections:
   projects:
     output: true
     permalink: /projects/:name/
-collections:
   puzzles:
     output: true
     permalink: /puzzles/:name/
