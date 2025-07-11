@@ -56,7 +56,7 @@ permalink: /puzzles/
 }
 </style>
 
-<div class="section-title">Open             (email responses to malcolmwigder@gmail.com) </div>
+<div class="section-title">Open </div>
 
 {% for puzzle in site.puzzles reversed %}
   {% if puzzle.status == "open" %}
@@ -88,4 +88,9 @@ permalink: /puzzles/
       </div>
     </a>
   {% endif %}
+<div style="margin-top: 60px; font-size: 0.95em; color: #444; text-align: center;">
+  💡 Got a solution or theory?  
+  <br>
+  Send your thoughts to <a href="mailto:youremail@example.com">youremail@example.com</a>
+</div>
 {% endfor %}
