@@ -14,7 +14,7 @@ I am a student at Rice University studying Math and Physics. I do research in vo
 
 I am interested in algorithmic trading and simulation theory, so you may find some projects about that here.
 
-I also am interested in Buddhist and Anarchist thought, so you might find some writings about that.
+I also am interested in Buddhist and Anarchist thought, so you might find some writings about that. As well as some creative fiction and non-fiction. Enjoy.
 
 
 <br>
