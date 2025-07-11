@@ -24,7 +24,7 @@ permalink: /puzzles/
 }
 .card-img {
   width: 100%;
-  max-height: 240px;
+  max-height: 150px;
   object-fit: cover;
   border-radius: 12px;
   margin-bottom: 16px;
@@ -46,19 +46,46 @@ permalink: /puzzles/
   font-size: 0.9em;
   color: #888;
 }
+.section-title {
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #333;
+  margin: 40px 0 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
 </style>
 
-<h1 style="margin-bottom: 32px;">Puzzles</h1>
+<div class="section-title">Open</div>
 
 {% for puzzle in site.puzzles reversed %}
-<a class="card" href="{{ puzzle.url }}">
-  {% if puzzle.image %}
-    <img class="card-img" src="{{ puzzle.image }}" alt="Thumbnail">
+  {% if puzzle.status == "open" %}
+    <a class="card" href="{{ puzzle.url }}">
+      {% if puzzle.image %}
+        <img class="card-img" src="{{ puzzle.image }}" alt="Thumbnail">
+      {% endif %}
+      <div class="card-content">
+        <p class="card-title">{{ puzzle.title }}</p>
+        <p class="card-summary">{{ puzzle.summary | default: "..." }}</p>
+        <p class="card-date">{{ puzzle.date | date: "%b %d, %Y" }}</p>
+      </div>
+    </a>
   {% endif %}
-  <div class="card-content">
-    <p class="card-title">{{ puzzle.title }}</p>
-    <p class="card-summary">{{ puzzle.summary | default: "..." }}</p>
-    <p class="card-date">{{ puzzle.date | date: "%b %d, %Y" }}</p>
-  </div>
-</a>
+{% endfor %}
+
+<div class="section-title">Closed</div>
+
+{% for puzzle in site.puzzles reversed %}
+  {% if puzzle.status == "closed" %}
+    <a class="card" href="{{ puzzle.url }}">
+      {% if puzzle.image %}
+        <img class="card-img" src="{{ puzzle.image }}" alt="Thumbnail">
+      {% endif %}
+      <div class="card-content">
+        <p class="card-title">{{ puzzle.title }}</p>
+        <p class="card-summary">{{ puzzle.summary | default: "..." }}</p>
+        <p class="card-date">{{ puzzle.date | date: "%b %d, %Y" }}</p>
+      </div>
+    </a>
+  {% endif %}
 {% endfor %}
