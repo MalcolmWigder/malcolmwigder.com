@@ -4,6 +4,7 @@ date: 2025-7-15
 layout: default
 summary: Anarchism
 image: /assets/sd.png
+published: false
 ---
 
 <style>

@@ -4,6 +4,7 @@ date: 2025-7-12
 layout: default
 summary: This is me, this is real
 image: /assets/table.png
+published: false
 ---
 
 <style>
@@ -322,4 +323,3 @@ We go to the recreation center at our college where they have big white rooms wh
 	Note that this is called <em>My Life</em> in Five opponents, not “Five Memorable Opponents.” From an existentialist perspective, you are what you do. In a game like Table Tennis, what you do is explicitly defined by who you play, and what it’s like. This is my best attempt to communicate what that’s been like, and as a result, communicate a part of who I am. A part that I am proud of.
 </p>
 <article>
-</style>
