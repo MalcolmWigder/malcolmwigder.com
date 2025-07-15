@@ -7,7 +7,7 @@ layout: default
 status: open
 ---
 
-My first project for Professor Gonnermann was to design experiments to determine how bubbles and liquid separate in liquid. Using some imaging techniques, we extracted the average luminosity of coffee at different \\( z \\) values (height in the column), at different times (shown below):
+My first project for Professor Gonnermann was to design experiments to determine how bubbles and liquid separate in a bubbly mixture. Using some imaging techniques, we extracted the average luminosity (brightness) of coffee at different \\( z \\) values (height in the column), at different times (shown below):
 
 <p>
   <img src="/assets/puzzle1/11.png" width="30%">
@@ -15,7 +15,7 @@ My first project for Professor Gonnermann was to design experiments to determine
   <img src="/assets/puzzle1/13.png" width="30%">
 </p>
 
-But we are not interested in the luminosity — we are interested in the *volume fraction of gas*, at every \\( z \\), at every \\( t \\).  
+But we are not interested in the brightness — we are interested in the *volume fraction of gas*, at every \\( z \\), at every \\( t \\).  
 Here, *volume fraction of gas* means the percentage of the total volume at height \\( z \\) that is occupied by gas (i.e., not liquid).
 
 We know:
