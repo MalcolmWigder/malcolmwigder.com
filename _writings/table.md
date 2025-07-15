@@ -1,5 +1,5 @@
 ---
-title: My Life in Five Table Tennis Oppoonents
+title: My Life in Five Table Tennis Opponents
 date: 2025-7-12
 layout: default
 summary: This is me, this is real
