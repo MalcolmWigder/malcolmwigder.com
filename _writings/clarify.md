@@ -1,5 +1,5 @@
 ---
-title: Clarifying My positions
+title: Clarifying My Positions
 date: 2025-7-10
 layout: default
 summary: Before we go any further
