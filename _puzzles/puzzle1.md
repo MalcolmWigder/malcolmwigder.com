@@ -5,6 +5,7 @@ date: 2025-07-11
 image: /assets/puzzle1/10.png
 layout: default
 status: open
+published: false
 ---
 
 My first project for Professor Gonnermann was to design experiments to determine how bubbles and liquid separate in a bubbly mixture. Using some imaging techniques, we extracted the average luminosity (brightness) of coffee at different \\( z \\) values (height in the column), at different times (one time shown below):

@@ -14,7 +14,7 @@ I am a student at Rice University studying Math and Physics. I do research in vo
 
 I am interested in algorithmic trading and simulation theory, so you may find some projects about that here.
 
-You may also find puzzles, crafting them a skill I am working to improve. Email me any solutions or thoughts.
+You may also find puzzles/problems, as crafting them is a skill I am working to improve. Email me any solutions or thoughts.
 
 
 <br>
