@@ -4,6 +4,7 @@ date: 2025-7-10
 layout: default
 summary: Before we go any further
 image: /assets/logo.png
+published: false
 ---
 
 <style>

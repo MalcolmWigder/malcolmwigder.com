@@ -1,11 +1,10 @@
 ---
-title: Test
-summary: Test
-date: 2025-07-10
-image: /assets/logo.png
+title: N-Body Part 1
+summary: C++, Python 
+date: 2025-07-16
+image: /assets/X.png
 layout: default
 status: open
 published: false
 ---
 
-This is a small web-based project.
